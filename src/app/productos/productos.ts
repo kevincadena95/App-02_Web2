@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Productos {
   productos = [
-    { id: 1, nombre: 'laptop', precio: 580, stock: 5, imagen:''},
-    { id: 2, nombre: 'mouse', precio: 25, stock: 12, imagen:''},
-    { id: 3, nombre: 'teclado', precio: 45, stock: 8,imagen:'' },
-    { id: 4, nombre: 'monitor', precio: 220, stock: 4, imagen:'' },
+    { id: 1, nombre: 'Laptop', precio: 580, stock: 5, imagen:'https://i.postimg.cc/J4mZWbD1/laptop.jpg'},
+    { id: 2, nombre: 'Mouse', precio: 25, stock: 12, imagen:'https://i.postimg.cc/X73d0wGn/mouse.jpg'},
+    { id: 3, nombre: 'Teclado', precio: 45, stock: 8,imagen:'https://i.postimg.cc/j2TwtbjX/teclado.jpg' },
+    { id: 4, nombre: 'Monitor', precio: 220, stock: 0, imagen:'https://i.postimg.cc/MKxV8yMZ/monitor.webp' },
   ]
 
 }

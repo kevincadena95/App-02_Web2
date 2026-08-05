@@ -1,5 +1,30 @@
-.productos {
+.contenedor-productos {
     display: grid;
-    grid-template-columns: repeat(1, 3fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    align-items: center;
+}
+
+.productos {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.productoImg {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    
+}
+
+.disponible {
+    color: green;
+}
+
+.agotado {
+    color: red;
 }
