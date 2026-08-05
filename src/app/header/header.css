@@ -1,0 +1,28 @@
+.header-nav {
+    background: #06402B;     
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    
+}
+
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    transition: .3s;
+}
+
