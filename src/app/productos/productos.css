@@ -14,11 +14,22 @@
     align-items: center;
 }
 
+p {
+    font-weight: bold;
+
+}
+
+.titulo {
+    text-align: center;
+    margin: 22px;
+    font-weight: bold;
+}
+
 .productoImg {
     width: 150px;
     height: 150px;
     object-fit: contain;
-    
+
 }
 
 .disponible {

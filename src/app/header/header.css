@@ -1,13 +1,12 @@
 .header-nav {
-    background: #06402B;     
+    background: #06402B;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    
-}
 
+}
 
 
 .nav-bar {
@@ -26,3 +25,21 @@
     transition: .3s;
 }
 
+img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+.nombre-logo {
+    align-self: auto;
+    display: flex;
+    align-items: center;
+    gap: 10 px
+
+}
+
+h1 {
+    margin-right: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

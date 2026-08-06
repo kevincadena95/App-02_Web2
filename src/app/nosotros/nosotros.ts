@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './nosotros.css',
 })
 export class Nosotros {
+  mensaje: string = '';
+
+  MostrarMensaje() {
+    this.mensaje = "Hola, Angular"
+
+  }
+
+}
+
+
+export class AppMessage {
+
 
 }
