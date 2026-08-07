@@ -1,5 +1,5 @@
 .header-nav {
-    background: #06402B;
+    background: #062B40;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -26,9 +26,10 @@
 }
 
 img {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
+    
 }
 
 .nombre-logo {
@@ -42,4 +43,10 @@ img {
 h1 {
     margin-right: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.nav-bar a.activo {
+    color: rgb(104, 206, 255);
+    
+    border-bottom: 2px solid  rgb(104, 206, 255);
 }

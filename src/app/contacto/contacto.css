@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -9,7 +10,7 @@
     width: 500px;
     height: auto;
     padding: 25px;
-    background-color: rgb(104, 206, 104);
+    background-color: rgb(104, 206, 255);
     border-radius: 10px;
     box-shadow: 10px 10px;
 }
@@ -19,8 +20,8 @@ form {
     grid-template-columns: 120px 1fr;
     gap: 15px;
     align-items: center;
-    
-    
+
+
 }
 
 label {
@@ -49,6 +50,16 @@ button {
 
 h2 {
     text-align: center;
-    margin: 24px;
+    margin: 22px;
     font-weight: bold;
+    color: #01579b; 
 }
+
+.error {
+    color: #06402B;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 2px;
+    grid-column: 2;
+}
+

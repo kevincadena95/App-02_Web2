@@ -1,18 +1,19 @@
-<h2 class="titulo">NUESTROS PRODUCTOS:</h2>
+<h2 class="titulo">NUESTRAS PELÍCULAS:</h2>
 <div class="contenedor-productos">
 
-    @for (producto of productos; track producto.id){
+    @for (pelicula of peliculas; track pelicula.id){
     <div class="productos">
-        <h2>{{producto.nombre}}</h2>
-        <h3>Precio: ${{producto.precio}}</h3>
-        <img [src]="producto.imagen" class="productoImg">
-        <p>Stock: {{producto.stock}}</p>
+        <h2>{{pelicula.titulo}}</h2>      
+        <p class="genero">Género: {{pelicula.genero}}</p>
+        <img [src]="pelicula.imagen" class="productoImg" alt="{{pelicula.titulo}}">
+        <h3>Precio: ${{pelicula.precio}}</h3> 
+        <p>Stock: {{pelicula.stock}}</p>
 
 
-        @if(producto.stock > 0) {
-        <p class="disponible">Producto Disponible</p>
+        @if(pelicula.stock > 0) {
+        <p class="disponible"> Disponible</p>
         } @else{
-        <p class="agotado">Producto Agotado</p>
+        <p class="agotado"> Agotado</p>
         }
     </div>
     }
