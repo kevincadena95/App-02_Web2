@@ -40,8 +40,8 @@ h3 {
 }
 
 .productoImg {
-    width: 150px;
-    height: 225px;
+    width: 250px;
+    height: 400px;
     object-fit: contain;
     display: block;
     margin: 0 auto; 
