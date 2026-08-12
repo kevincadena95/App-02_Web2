@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Peliculas } from '../peliculas/peliculas';
-//import { PeliculasService } from '../service/peliculas';
+import { PeliculasService } from '../service/peliculas';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +11,9 @@ import { Peliculas } from '../peliculas/peliculas';
 export class Home {
   [x: string]: any;
 
-  /*private peliculasService = inject(PeliculasService);
+  private peliculasService = inject(PeliculasService);
 
-  peliculasHome = this.peliculasService.obtenerPeliculas();*/
+  peliculasHome = this.peliculasService.obtenerPeliculas();
 
 }
 

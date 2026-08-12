@@ -5,7 +5,7 @@ import { inject, Injectable } from '@angular/core';
   providedIn: 'root',
 })
 
-/*
+
 export class PeliculasService {
 
   obtenerPeliculas() {
@@ -27,15 +27,6 @@ export class PeliculasService {
     ]
   }
 
-}*/
-
-
-export class Producto {
-
-  private http = inject(HttpClient);
-  private apiUrl = 'https://fakestoreapi.com/products';
-
-  obtenerProductos() {
-    return this.http.get<any[]>(this.apiUrl);
-  }
 }
+
+

@@ -1,46 +1,31 @@
 <h2 class="titulo">NUESTRAS PELÍCULAS:</h2>
 <div>
 
-    <!--
+
 
     <div class="contenedor-productos">
-@for (pelicula of peliculas; track pelicula.id){
-    <div class="productos">
-        <h2>{{pelicula.titulo}}</h2>      
-        <p class="genero">Género: {{pelicula.genero}}</p>
-        <img [src]="pelicula.imagen" class="productoImg" alt="{{pelicula.titulo}}">
-        <h3>Precio: ${{pelicula.precio}}</h3> 
-        <p>Stock: {{pelicula.stock}}</p>
+        @for (pelicula of peliculas; track pelicula.id){
+        <div class="productos">
+            <h2>{{pelicula.titulo}}</h2>
+            <p class="genero">Género: {{pelicula.genero}}</p>
+            <img [src]="pelicula.imagen" class="productoImg" alt="{{pelicula.titulo}}">
+            <h3>Precio: ${{pelicula.precio}}</h3>
+            <p>Stock: {{pelicula.stock}}</p>
 
 
-        @if(pelicula.stock > 0) {
-        <p class="disponible"> Disponible</p>
-        } @else{
-        <p class="agotado"> Agotado</p>
+            @if(pelicula.stock > 0) {
+            <p class="disponible"> Disponible</p>
+            } @else{
+            <p class="agotado"> Agotado</p>
+            }
+        </div>
         }
-    </div>
-    }
 
     </div>
-    
-    -->
 
 
-    @for (producto of productos; track producto.id) {
-    <div class="productos">
-        <h2>{{ producto.title }}</h2>
-        <p class="genero">Género: {{ producto.category }}</p>
 
-        <img [src]="producto.image" class="productoImg">
 
-        <h3>Precio: ${{ producto.price }}</h3>
-
-        <p>{{ producto.description }}</p>
-
-        <p>Calificación: {{ producto.rating?.rate }}</p>
-        <p>Votos: {{ producto.rating?.count }}</p>
-    </div>
-    }
 
 
 </div>
