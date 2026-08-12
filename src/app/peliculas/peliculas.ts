@@ -1,5 +1,6 @@
-import { Component, inject } from '@angular/core';
-import {PeliculasService } from '../service/peliculas'
+import { Component, inject, OnInit } from '@angular/core';
+//import { PeliculasService } from '../service/peliculas'
+import { Producto } from '../service/peliculas'
 
 @Component({
   selector: 'app-productos',
@@ -8,9 +9,19 @@ import {PeliculasService } from '../service/peliculas'
   styleUrl: './peliculas.css',
 })
 
-export class Peliculas {
-  
-  private peliculasService = inject(PeliculasService) ;
-  
-  peliculas = this.peliculasService.obtenerPeliculas();
+export class Peliculas implements OnInit {
+
+  /*private peliculasService = inject(PeliculasService) ;
+  peliculas = this.peliculasService.obtenerPeliculas();*/
+
+
+  private productosService = inject(Producto);
+  productos: any[] = [];
+
+  ngOnInit() {
+    this.productosService.obtenerProductos().subscribe(data => {
+      this.productos = data;
+    });
+  }
+
 }

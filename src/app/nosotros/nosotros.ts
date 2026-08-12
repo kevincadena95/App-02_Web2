@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import {NosotrosService} from '../service/nosotros'
 
 @Component({
   selector: 'app-nosotros',
@@ -7,17 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './nosotros.css',
 })
 export class Nosotros {
-  mensaje: string = '';
 
-  MostrarMensaje() {
-    this.mensaje = "Hola, Angular"
+  private nosotrosService = inject(NosotrosService);
 
-  }
+  mensaje = this.nosotrosService.obtenerMisionVision();
 
 }
 
-
-export class AppMessage {
-
-
-}

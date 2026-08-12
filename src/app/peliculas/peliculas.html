@@ -1,7 +1,10 @@
 <h2 class="titulo">NUESTRAS PELÍCULAS:</h2>
-<div class="contenedor-productos">
+<div>
 
-    @for (pelicula of peliculas; track pelicula.id){
+    <!--
+
+    <div class="contenedor-productos">
+@for (pelicula of peliculas; track pelicula.id){
     <div class="productos">
         <h2>{{pelicula.titulo}}</h2>      
         <p class="genero">Género: {{pelicula.genero}}</p>
@@ -17,4 +20,27 @@
         }
     </div>
     }
+
+    </div>
+    
+    -->
+
+
+    @for (producto of productos; track producto.id) {
+    <div class="productos">
+        <h2>{{ producto.title }}</h2>
+        <p class="genero">Género: {{ producto.category }}</p>
+
+        <img [src]="producto.image" class="productoImg">
+
+        <h3>Precio: ${{ producto.price }}</h3>
+
+        <p>{{ producto.description }}</p>
+
+        <p>Calificación: {{ producto.rating?.rate }}</p>
+        <p>Votos: {{ producto.rating?.count }}</p>
+    </div>
+    }
+
+
 </div>
