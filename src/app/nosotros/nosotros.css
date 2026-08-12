@@ -1,0 +1,66 @@
+.banner {
+    background-color: #01579b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.banner h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+}
+
+.banner p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.contenedor-texto {
+    padding: 20px;
+}
+
+.productos {
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px 50px;
+    text-align: center;
+    background-color: #083a57;
+    color: #ffffff;
+}
+
+.productos h3 {
+    color: #249fcf;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.productos p {
+    margin: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.grid-pilares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.productos ul {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.productos li {
+    margin: 8px;
+    text-align: justify;
+}
+
+.lema {
+    text-align: center;
+    color: #01579b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 25px;
+}
