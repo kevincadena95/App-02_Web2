@@ -24,17 +24,22 @@ export class Contacto {
     nombre: ['', Validators.required],
     email: ['', [Validators.required, Validators.email],],
     telefono: ['', [Validators.required, Validators.maxLength(10), Validators.minLength(10)]],
-    descripcion: ['',[Validators.maxLength(10), Validators.minLength(200)]]
-    
+    descripcion: ['', [Validators.maxLength(10), Validators.minLength(200)]]
+
   });
 
 
   enviar() {
-    if (this.formularioContacto.valid)
-      {alert('El formulario se envio de manera correcra al servidor')}
-    else {alert('El formulario tiene datos ingresados de manera incorrecta')}
+    if (this.formularioContacto.valid) { alert('El formulario se envio de manera correcta al servidor') }
+    else { alert('El formulario tiene datos ingresados de manera incorrecta') }
     console.log(this.formularioContacto.value);
     console.log(this.formularioContacto.valid);
-    
+
   }
+
+
+  nosPermiteSalir() {
+    return this.formularioContacto.dirty;
+  }
+
 }

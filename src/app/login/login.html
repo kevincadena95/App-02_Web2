@@ -1,0 +1,26 @@
+<div class="pagina">
+
+    <h2>INICIA SESIÓN</h2>
+
+    <div class="contenedorFormulario">
+
+        <div class="div1">
+            <form [formGroup]="formularioLogin" (ngSubmit)="ingresar()">
+
+                <label>Usuario: </label>
+                <input formControlName="usuario" type="text">
+
+                <label>Contraseña: </label>
+                <input formControlName="contraseña" type="password">
+
+                @if (errorLoing()) {
+                <label class="error">El usuario la contraseña esta incorrectos.</label>
+                }
+
+                <button type="submit">Ingresar</button>
+
+            </form>
+        </div>
+    </div>
+
+</div>

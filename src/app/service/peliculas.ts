@@ -23,7 +23,6 @@ export class PeliculasService {
       { id: 10, titulo: 'Avatar', precio: 14, genero: 'Ciencia Ficción / Acción', stock: 12, imagen: 'https://i.postimg.cc/9Q4801Yz/avatar.jpg' },
       { id: 11, titulo: 'The Drama', precio: 10, genero: 'Drama', stock: 4, imagen: 'https://i.postimg.cc/c1MVGDFW/drama.jpg' },
       { id: 12, titulo: 'Jurassic World', precio: 13, genero: 'Aventura / Ciencia Ficción', stock: 9, imagen: 'https://i.postimg.cc/QNkRZ60z/jurassic.jpg' },
-
     ]
   }
 
