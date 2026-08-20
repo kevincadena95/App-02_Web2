@@ -4,7 +4,7 @@ import { PeliculasService } from '../service/peliculas';
 
 @Component({
   selector: 'app-home',
-  imports: [Peliculas],
+  imports: [],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

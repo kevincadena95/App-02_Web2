@@ -13,6 +13,8 @@ import { RentarPelis } from './rentar-pelis/rentar-pelis';
 import { RentarPelisVip } from './rentar-pelis-vip/rentar-pelis-vip';
 import { matchGuard } from './guard/match-guard';
 import { Login } from './login/login';
+import { RentarPrueba } from './rentar-prueba/rentar-prueba';
+import { matchGuard2Guard } from './guard/match-guard-2-guard';
 
 
 export const routes: Routes = [
@@ -30,8 +32,11 @@ export const routes: Routes = [
         ]
     },
 
-    {path: 'rentar', component: RentarPelis},
+    
     {path: 'rentar', component: RentarPelisVip, canMatch: [matchGuard]},
+    {path: 'rentar', component: RentarPrueba, canMatch: [matchGuard2Guard]},
+    {path: 'rentar', component: RentarPelis},
+    
 
     { path: '**', component: Home },
 ];
